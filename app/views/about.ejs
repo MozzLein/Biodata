@@ -1,0 +1,49 @@
+<div class="about-container ">
+    <div class="d-flex flex-column justify-content-center mr-auto  ">
+        <h2>About Me</h2>
+        <div class="aboutme w-100">
+            <table class="float-left mr-5">
+                <tr>
+                    <td style="width:100px">Name</td>
+                    <td>: <%-data.name %></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>: <%-data.age %></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>: <%-data.location %></td>
+                </tr>
+            </table>
+            <table class="float-left">
+                <tr>
+                    <td style="width:100px">Degree</td>
+                    <td>: <%-data.degree %></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>: <%-data.phone %></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>: <%-data.email %></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="divider"></div>
+        <div class="whoami">
+            <h2>Who Am I?</h2>
+            <p><%-data.whoami-%></p>
+        </div>
+        <div class="divider"></div>
+        <div class="education">
+            <h2>My Education</h2>
+            <% data.education.forEach(data => { %>
+            <p><%= data %></p>
+            <% }) %>
+        </div>
+    </div>
+
+</div>

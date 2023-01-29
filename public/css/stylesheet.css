@@ -1,0 +1,182 @@
+* {
+    color: #FFFFFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #ffbe0b
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+td {
+    font-size: 24px;
+}
+
+.navbar {
+    background-color: #2f3e46;
+}
+
+.main-container {
+    background-color: #52796F;
+}
+
+.profesi-container,
+.about-container,
+.skill-container,
+.experience-container {
+    background-color: #405F63;
+    height: 100%;
+}
+
+.profesi-container div {
+    width: 50%;
+}
+
+.profesi-container p {
+    text-align: center;
+}
+
+.icon-list {
+    padding-left: 0px;
+}
+
+.hero-img {
+    object-fit: cover;
+}
+
+.about-container,
+.skill-container,
+.experience-container {
+    padding: 48px;
+}
+
+.about-container h2 {
+    text-align: justify;
+    font-size: 30px;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skill p {
+    padding-right: 50px;
+}
+
+.skill-bar {
+    width: 500px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #a07600;
+    border-radius: inherit;
+    transition: width 0.1s ease-in;
+}
+
+.card {
+    width: 5000px;
+    margin-bottom: 5px;
+    background-color: #213129;
+}
+.modal-content{
+    background-color: #F6F6F3;
+}
+.modal-title, .modal-body a{
+    color: #2f3e46;
+}
+
+@media only screen and (max-width: 768px) {
+    .profesi-container div {
+        width: 100%;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    p,
+    td {
+        font-size: 16px;
+    }
+
+    .social-media-icon {
+        max-height: 24px;
+    }
+
+    .skill {
+        flex-direction: column;
+    }
+
+    .skill p {
+        padding-right: 0px;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .aboutme {
+        flex-direction: column;
+
+    }
+
+    main {
+        height: auto;
+    }
+
+    .aboutme table {
+        margin: 0px;
+    }
+
+    .about-container,
+    .skill-container {
+        padding: 12px;
+    }
+
+    .about-container h2 {
+        font-size: 24px;
+    }
+
+    .about-container p,
+    .about-container td {
+        font-size: 16px;
+    }
+
+    .skill p {
+        padding-right: 0px;
+    }
+
+}

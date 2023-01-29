@@ -1,0 +1,28 @@
+<div class="skill-container">
+    <div class="mr-auto">
+        <h2>My Skills</h2>
+        <div class="skill d-flex text-justify">
+            <p>As I embarked on my journey in the IT world, I discovered a strong passion for becoming a web developer. I started from the basics, learning HTML, CSS, JavaScript, MySQL, and NodeJS. However, my ultimate goal is to become a skilled and talented back-end developer at a young age. I aspire to work in a high-paying company with a challenging and enjoyable environment. I am also eager to continue learning and growing in this technology field.        </p>
+            <div class="divider"></div>
+            <div class="card-container d-flex flex-column justify-between">
+            <% data.skills.forEach(data => { %>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><%-data.skill-%></h5>
+                        <h6 class="card-subtitle mb-2"><%-data.type-%></h6>
+                        <div class="skill-card d-flex align-items-center">
+                            <div class="skill-bar">
+                                <!-- Element untuk menampilkan proses -->
+                                <div class="skill-bar-fill" id="bar" style="width:<%-data.range-%>%"></div>
+                            </div>
+                            <span><%=data.range%>%</span>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+        </div>
+    </div>
+   
+    
+</div>
